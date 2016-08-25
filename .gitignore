@@ -22,8 +22,8 @@ hs_err_pid*
 
 *.idea/
 *.iml
-*target/
 *out/
 *.iws
 
 atlassian*.xml
+.DS_Store
