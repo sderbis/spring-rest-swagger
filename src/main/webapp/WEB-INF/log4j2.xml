@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d | %-5p | %t | %c{1}:%M(%L) | %m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="org.apache.log4j.xml" level="INFO"/>
+        <Logger name="org.springframework" level="ERROR"/>
+        <Logger name="org.hibernate" level="ERROR"/>
+        <Logger name="springfox.documentation" level="ERROR"/>
+
+        <Root level="INFO">
+            <AppenderRef ref="console"/>
+        </Root>
+    </Loggers>
+</Configuration>
