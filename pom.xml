@@ -8,9 +8,9 @@
     <artifactId>spring-rest-swagger</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Spring Rest and Swagger Sample</name>
+    <name>Spring Rest and Swagger Example</name>
     <description>
-        This demonstrates building a RESTful service using Spring and documented using Swagger
+        This demonstrates building a RESTful service using Spring and documented using Swagger 2
     </description>
 
     <developers>
@@ -173,25 +173,6 @@
             <version>${springframework-version}</version>
         </dependency>
 
-        <!-- Spring Security -->
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-config</artifactId>
-            <version>${springframework.security-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-web</artifactId>
-            <version>${springframework.security-version}</version>
-        </dependency>
-
-        <!-- Caching -->
-        <dependency>
-            <groupId>net.sf.ehcache</groupId>
-            <artifactId>ehcache</artifactId>
-            <version>${ehcache-version}</version>
-        </dependency>
-
         <!-- Logging -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
@@ -345,12 +326,6 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>${springframework-version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-test</artifactId>
-            <version>${springframework.security-version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
