@@ -19,8 +19,7 @@ public class AboutController extends ApiController {
     AboutService aboutService;
 
     @ApiOperation(httpMethod = "GET", value = "About", response = AboutInfo.class,
-            notes = "Provides basic version info about the Gizmo REST API.  " +
-                    "Can be used to verify that the API is up and running as it does not require any authorization.")
+            notes = "Provides basic version info about the Gizmo REST API.")
     @RequestMapping(value = RESOURCE_ABOUT, method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     public AboutInfo about() {

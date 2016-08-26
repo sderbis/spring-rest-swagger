@@ -2,10 +2,7 @@ package com.example.spring.rest.controller;
 
 import com.example.spring.rest.config.BaseControllerTest;
 import com.example.spring.rest.model.Gizmo;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 
 import static com.example.spring.rest.controller.ApiController.*;
 import static org.hamcrest.Matchers.containsString;
@@ -16,10 +13,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class GizmoControllerTest extends BaseControllerTest {
     private static final String gizmoId = "1";
     private static final String gizmoName = "some-name";
-
-    @Autowired
-    @Qualifier("restObjectMapper")
-    ObjectMapper objectMapper;
 
     @Test
     public void testFindGizmoById() throws Exception {
